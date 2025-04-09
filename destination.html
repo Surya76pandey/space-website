@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  
+  <title>Space tourism website</title>
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:regular,italic,700" rel="stylesheet" />
+  <script src="js/destination.js" defer></script>
+  <script src="js/header.js" defer></script>
+</head>
+<body class="bg-[url('/assets/destination/background-destination-mobile.jpg')] sm:bg-[url('/assets/destination/background-destination-tablet.jpg')] md:bg-[url('/assets/destination/background-destination-desktop.jpg')] bg-cover bg-no-repeat bg-center">
+
+  <header class="">
+    <div id="navbar" class="flex justify-between py-6">
+      <div class="pl-8" id="logo"><img src="/assets/shared/logo.svg" alt=""></div>
+      <div id="menubar" class="sm:flex gap-5 px-10 py-6 hidden">
+        <a href="/index.html">00 Home</a>
+        <a class="border-active" href="#">01 Destination</a>
+        <a href="/crew.html">02 Crew</a>
+        <a href="/index.html">03 Technology</a>
+      </div>
+      <div id="hamburger" class="sm:hidden">
+        <img id="ham-icon" src="/assets/shared/icon-hamburger.svg" alt="" />
+        <img id="close-icon" class="hidden" src="/assets/shared/icon-close.svg" alt="" />
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="text-2xl p-5">01 PICK YOUR DESTINATION</h1>
+   <div id="destination-div" class="flex flex-col lg:flex-row max-w-100vw items-center justify-center gap-7">
+    <div class="max-w-[100%] lg:max-w-[50%] p-7">
+      <img id="destination-image"  class="max-w-[80%]" src="/assets/destination/image-moon.png" alt="">
+    </div>
+    <div id="destination-details" class="max-w-[100%] lg:max-w-[50%] p-7">
+      <div id="destination-names" class="flex gap-3">
+        <span id="moon" class="name-span border-active">MOON</span>
+        <span id="mars" class="name-span">MARS</span>
+        <span id="europa" class="name-span">EUROPA</span>
+        <span id="titan" class="name-span">TITAN</span>
+      </div>
+      <p id="destination-name" class="text-8xl my-6">MOON</p>
+      <P id="description" class="max-w-[80%] py-6">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</P>
+        <hr>
+        <div id="metrics" class="flex justify-between">
+          <div id="distance">
+            <p>AVG. Distance</p>
+            <h1 id="destination-distance">384,400 km</h1>
+          </div>
+
+          <div id="time">
+            <P>EST TRAVEL TIME</P>
+            <h1 id="destination-time">3 days</h1>            
+          </div>
+          <div></div>
+        </div>
+    </div>
+   </div>
+  </main>
+
+
+  
+
+</body>
+</html>

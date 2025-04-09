@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Baskerville;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+
+#menubar{
+    color: rgba(255, 255, 255, 0.877);
+    background-color: rgba(30, 45, 77, 0.486);
+}
+
+#image-content-text{
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#destination-names span{
+    cursor: pointer;
+}
+.border-active{
+    border-bottom: 4px solid rgb(29, 214, 228);
+}
+
+#slides{
+    display: flex;
+    gap: 30px;    
+}
+
+.slide{
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 50%;
+}
+.slide.active {
+    background-color: white;
+}
+#hamburger{
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+#crew-role,
+#crew-name,
+#crew-bio,
+#crew-image-div {
+  transition: all 1s ease-in-out;
+}
+
+
+
+
+@media(max-width:640px){
+    .ham-active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+    
+    #menubar{
+        background-color: rgba(30, 45, 77, 0.979);        
+        font-weight: 700;
+    }
+}

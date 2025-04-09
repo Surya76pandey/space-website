@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Space tourism website</title>
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:regular,italic,700" rel="stylesheet" />
+  
+</head>
+<body class="bg-[url('/assets/home/background-home-tablet.jpg')] sm:bg-[url('/assets/home/background-home-tablet.jpg')] md:bg-[url('/assets/home/background-home-desktop.jpg')] bg-cover bg-no-repeat bg-center">
+
+  <header class="">
+    <div id="navbar" class="flex justify-between py-6">
+      <div class="pl-8" id="logo"><img src="/assets/shared/logo.svg" alt=""></div>
+      <div id="menubar" class="sm:flex gap-5 px-10 py-6 hidden">
+        <a href="/index.html">00 Home</a>
+        <a href="/destination.html">01 Destination</a>
+        <a href="/crew.html">02 Crew</a>
+        <a href="/technology.html">03 Technology</a>
+      </div>
+
+      <div id="hamburger" class="sm:hidden">
+        <img id="ham-icon" src="/assets/shared/icon-hamburger.svg" alt="">
+        <img id="close-icon" class="hidden" src="/assets/shared/icon-close.svg" alt="">
+      </div>
+      
+    </div>
+    
+  </header>
+
+
+  <main class="h-[100vh] lg:h-auto flex flex-col sm:flex-row p-10 justify-between items-center md:max-w-[100%] gap-20 sm:gap-7">
+    <div id="text-content" class="text-white md:w-[50%] flex flex-col gap-10">
+      <h2 class="text-3xl sm:text-5xl font-light">So, you want to travel to</h2>
+      <h1 class="text-7xl sm:text-9xl">SPACE</h1>
+      <p> Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!</p>
+    </div>
+    <div id="explore-div" class="md:w-[50%] flex items-center justify-center">
+      <div id="image-content" class="w-[250px] h-[250px] sm:w-[200px] sm:h-[200px] bg-white rounded-[50%] relative">
+        <p id="image-content-text">EXPLORE</p>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="js/header.js"></script>
+</body>
+</html>
